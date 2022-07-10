@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de despesas | The BBQ Burger</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <main class="container">
+        <div class="content-container">
+            <img src="src/images/logo.png" alt="logo" class="logo">
+            <h1>Controle de despesas</h1>
+            <div class="saldo-final">
+                <h2>SALDO ATUAL</h2>
+                <h1 style="color: #F0A654;" id="valor-final">R$0.00</h1>
+            </div>
+            <div class="saldos">
+                <div class="receitas">
+                    <h3>RECEITAS</h3>
+                    <h4 style="color: rgb(67, 226, 67);" id="valor-receita">R$0.00</h4>
+                </div>
+                <div class="despesas">
+                    <h3>DESPESAS</h3>
+                    <h4 style="color: red;" id="valor-despesa">R$0.00</h4>
+                </div>
+            </div>
+            <div class="transacoes">
+                <h3>Transações</h3>
+                <ul class="historico-transacoes">
+            
+                </ul>
+            </div>
+            <div class="novas-transacoes">
+                <h3>Adicionar transação</h2>
+                <label for="transacao-nome">Nome</label><br>
+                <input type="text" name="transacao-nom" id="transacao-nome" placeholder="Nome da transação">
+                <br><br>
+                <label for="transacao-valor">Valor</label><br>
+                <span class="info-transacao">(Positivo - receitas / Negativos - despesas)</span><br>
+                <input type="number" name="transacao-valor" id="transacao-valor" placeholder="Valor da transação">
+                <br>
+                <button id="btn">Adicionar</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="./src/scripts/index.js" type="module"></script>
+</body>
+</html>

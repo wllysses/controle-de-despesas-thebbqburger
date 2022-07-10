@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #F0A654;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    width: 400px;
+    min-height: 700px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.281);
+    border-radius: 5px;
+}
+
+.container .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container .logo {
+    width: 50px;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+}
+
+.container .saldo-final {
+    width: 100%;
+}
+
+.container .saldos {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.26);
+    margin-bottom: 30px;
+}
+
+.container .transacoes {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
+    overflow-y: scroll;
+}
+
+.container .transacoes h3 {
+    margin-bottom: 10px;
+}
+
+.container .transacoes .historico-transacoes li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .novas-transacoes {
+    width: 100%;
+    height: 300px;
+}
+
+.container .novas-transacoes h3 {
+    margin-bottom: 20px;
+}
+
+.container .novas-transacoes label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.container .novas-transacoes input {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.container .novas-transacoes #btn {
+    width: 100%;
+    height: 40px;
+    background-color: #F0A654;
+    border: none;
+    color: white;
+    font-weight: 700;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.container .novas-transacoes #btn:hover {
+    background-color: #b47c3d;
+}
+
+.container .novas-transacoes span {
+    font-size: 14px;
+}
