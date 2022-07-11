@@ -2,7 +2,7 @@ let somaValores = []
 let somaValoresPositivos = []
 let somaValoresNegativos = []
 
-function valorTotal() {
+function allTransactions() {
     let saldoTotal = document.getElementById('valor-final')
     let nomeInput = document.getElementById('transacao-nome')
     let valorInput = document.getElementById('transacao-valor')
@@ -18,9 +18,10 @@ function valorTotal() {
         return somaTotal + valor
     }, 0)
 
+    //mostrando o valor total na tela
     saldoTotal.innerHTML = `R$${calcularTotal.toFixed(2)}`
 
-    //verificar se o valor é positivo ou negativo e calcular as receitas e despesas
+    //verificar se o valor da transação é positivo ou negativo e calcular as receitas e despesas
     if(valorTransacao < 0) {
         somaValoresNegativos.push(valorTransacao)
 
@@ -52,5 +53,5 @@ function valorTotal() {
 }
 
 document.getElementById('btn').addEventListener('click', () => {
-    valorTotal()
+    allTransactions()
 })
